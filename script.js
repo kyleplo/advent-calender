@@ -22,7 +22,7 @@ window.addEventListener("hashchange", showDay);
 window.addEventListener("load", showDay);
 function showDay(){
 if(location.hash.length > 0){var day = location.hash.slice(1);
-var readDay = day - 1;
+var readDay = day + 1;
 document.getElementById("popup").removeAttribute("hidden");
 document.getElementById("title").innerHTML = "December " + readDay;
 document.getElementById("text").innerHTML = data.data[day].p;
