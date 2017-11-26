@@ -1,0 +1,4 @@
+body {font-family: Arial}
+h1 {width: 99%;padding: 15px;background-color: lightskyblue; color: white}
+.day {color: red;font-size: 3em;display:inline-block}
+.popup {position: fixed;top:30%;left:40%;width:20%;}
