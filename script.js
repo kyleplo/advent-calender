@@ -22,8 +22,9 @@ window.addEventListener("hashchange", showDay);
 window.addEventListener("load", showDay);
 function showDay(){
 if(location.hash.length > 0){var day = location.hash.slice(1);
+var readDay = day - 1;
 document.getElementById("popup").removeAttribute("hidden");
-document.getElementById("title").innerHTML = "December " + (day + 1);
+document.getElementById("title").innerHTML = "December " + readDay;
 document.getElementById("text").innerHTML = data.data[day].p;
 document.getElementById("credit").innerHTML = data.data[day].s;
 document.getElementById("link").setAttribute("href",data.data[day].l);
