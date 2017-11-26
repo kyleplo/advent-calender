@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+<head><title>Kyleplo's Online Advent Calender</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<h1>Kyleplo's Online Advent Calender</h1>
+<h2 id="date"></h2>
+<p id="msg1" hidden>It is not yet December! Check back later.</p>
+<h3 id="msg2" hidden>Merry Christmas!</h3>
+<p id="msg3" hidden>It is after Christmas. You can view any day.</p>
+<main>
+</main>
+<!-- Template: <a href="#id" class="day">Day</a> -->
+<div id="popup" hidden>
+<p class="popup-top"><span>&times;</span></p>
+<h3 id="title"></h3>
+<p id="text"></p>
+<p class="gray">-<span id="credit"></span></p>
+<p><a href="https://santatracker.google.com/village.html" id="link">Christmas Link of the Day</a></p>
+<button class="btn" data-clipboard-text="https://kyleplo.github.io/advent-calender" id="share">Copy share link</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script><script src="script.js"></script>
+</body>
+</html>
