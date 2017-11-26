@@ -1,6 +1,7 @@
-body, html {font-family: Arial;margin:0}
-h1 {width: 99%;padding: 15px;background-color: deepskyblue; color: white}
+body, html {font-family: Arial;margin:0;overflow-x:hidden}
+h1 {width: 99%;padding: 15px;background-color: deepskyblue; color: white;margin:0}
 .day {color: red;font-size: 3em;display:inline-block;text-decoration:none;padding:15px}
 #popup {position: fixed;top:30%;left:40%;width:20%;background-color:steelblue;padding:5px;color:white}
 p, h3, h2 {padding: 5px;margin:3px}
 #close {float: right;font-weight:bold}
+#popup a, button {color:inherit;border:none;background-color:transparent;text-decoration:underline;cursor:pointer}
