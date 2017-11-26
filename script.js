@@ -17,7 +17,7 @@ var main = document.querySelector("main");
 for(var i = 0;i < days;i++){main.innerHTML += '<a href="#' + i + '" class="day">' + (i + 1) + '</a> '};
 console.log("Loaded " + days + " days");
 }
-document.getElementById("close").addEventListener("click",function (){document.getElementById("popup").setAttribute("hidden","hidden");});
+document.getElementById("close").addEventListener("click",function (){document.getElementById("popup").setAttribute("hidden","hidden");console.log("Popup closed.")});
 window.addEventListener("hashchange", showDay);
 window.addEventListener("load", showDay);
 function showDay(){
@@ -28,4 +28,5 @@ document.getElementById("text").innerHTML = data.data[day].p;
 document.getElementById("credit").innerHTML = data.data[day].s;
 document.getElementById("link").setAttribute("href",data.data[day].l);
 document.getElementById("share").setAttribute("href","https://kyleplo.github.io/advent-calender#" + day);
+console.log("Popup loaded.");
 }
