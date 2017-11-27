@@ -4,9 +4,8 @@
   "version": "1.0",
   "description": "Get notifications for Kyleplo's Online Advent Calender.",
   "background": {
-    // Recommended
+    "scripts":["notify.js"],
     "persistent": false
   },
-  "background_page": ...,
   "homepage_url": "https://kyleplo.github.io/advent-calender",
   "permissions": ["storage","notifications"]}
