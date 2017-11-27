@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Kyleplo's Online Advent Calender Notifications",
+  "version": "1.0",
+  "description": "Get notifications for Kyleplo's Online Advent Calender.",
+  "background": {
+    // Recommended
+    "persistent": false
+  },
+  "background_page": ...,
+  "homepage_url": "https://kyleplo.github.io/advent-calender",
+  "permissions": ["storage","notifications"]}
