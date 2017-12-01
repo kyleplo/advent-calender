@@ -10,7 +10,7 @@ document.getElementById("date").innerHTML = months[d.getMonth()] + " " + d.getDa
 if(d.getMonth() < 11 && d.getMonth() > 5){document.getElementById("msg1").removeAttribute("hidden")};
 if(d.getMonth() === 11 && d.getDate() === 25){document.getElementById("msg2").removeAttribute("hidden")};
 if(d.getMonth() === 11 && d.getDate() > 24){document.getElementById("msg3").removeAttribute("hidden");loadDays(24)};
-if(d.getMonth() === 11 && d.getDate() < 25){loadDays(d.getDate() - 1)};
+if(d.getMonth() === 11 && d.getDate() < 25){loadDays(d.getDate())};
 if(d.getMonth() < 6){document.getElementById("msg3").removeAttribute("hidden");loadDays(24)};
 function loadDays(days){
 var main = document.querySelector("main");
@@ -28,6 +28,6 @@ document.getElementById("title").innerHTML = "December " + readDay;
 document.getElementById("text").innerHTML = data.data[day].p;
 document.getElementById("credit").innerHTML = data.data[day].s;
 document.getElementById("link").setAttribute("href",data.data[day].l);
-document.getElementById("share").setAttribute("href","https://kyleplo.github.io/advent-calender#" + day);
+document.getElementById("share").setAttribute("href","https://chrismas.kyleplogames.com/#" + day);
 console.log("Popup loaded.");
 }}
