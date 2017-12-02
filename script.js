@@ -28,6 +28,6 @@ document.getElementById("title").innerHTML = "December " + readDay;
 document.getElementById("text").innerHTML = data.data[day].p;
 document.getElementById("credit").innerHTML = data.data[day].s;
 document.getElementById("link").setAttribute("href",data.data[day].l);
-document.getElementById("share").setAttribute("href","http://chrismas.kyleplogames.com/#" + day);
+document.getElementById("share").setAttribute("data-clipboard-text","http://chrismas.kyleplogames.com/#" + day);
 console.log("Popup loaded.");
 }}
